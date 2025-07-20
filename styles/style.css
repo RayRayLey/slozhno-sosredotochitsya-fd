@@ -2,4 +2,240 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  --page-background: url("/images/cover-image-dark.png");
+  --main-title-color: #000028;
+  --main-text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --decorative-color: #DB00FF;
+  background-image: var(--page-background);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--main-title-color);
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.header {
+  block-size: 100vh;
+  min-block-size: 41.75rem;
+  padding: 0.625rem;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.header::before {
+  content: ''; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  block-size: 25px;
+  inline-size: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+} 
+
+.header::after {
+  content: ''; 
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: transparent;
+  block-size: 25px;
+  inline-size: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__decoration {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.header__decoration::after {
+  position: absolute;
+  content: ''; 
+  top: 8px;
+  left: 48px;
+  block-size: 9px;
+  inline-size: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.625rem;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.header__theme-menu-item {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-button {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  background-color: transparent;
+  block-size: 1.625rem;
+  inline-size: 4.375rem;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  color: var(--decorative-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: calc(7.25rem * 0.83);
+}
+
+.header__description {
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.463rem;
+  margin-top: 55px;
+}
+
+.title-decor {
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+}
+
+.topic {
+  margin-bottom: 50px;
+  padding: 0 10px 0 10px;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.topic:last-of-type {
+  margin-bottom: 40px;
+}
+
+.topic-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.sub-topic-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.sub-topic-description {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.topic-item-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 400;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.how-to-sub-topic-title {
+  background-color: var(--accent-color);
+}
+
+.header__description-text,
+.why-reasons-title,
+.distractions-title,
+.how-to-sub-topic-title-text {
+  inline-size: 300px;
+  background-color: transparent;
+}
+
+.how-to-concentrate-title {
+
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gallery-image {
+  inline-size: 100%;
+}
+
+
+.footer {
+  block-size: 100vh;
+  min-block-size: 41.75rem;
+  padding: 0.625rem;
+  position: relative;
+  display: grid;
+}
+
+.footer__title {
+  color: var(--decorative-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: calc(7.25rem * 0.83);
+  text-align: center;
+  margin: auto;
+}
+
+
+.footer::before {
+  content: ''; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  block-size: 25px;
+  inline-size: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+} 
+
+.footer::after {
+  content: ''; 
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: transparent;
+  block-size: 25px;
+  inline-size: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
 }
