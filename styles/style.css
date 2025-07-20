@@ -65,9 +65,6 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
-.header__theme-menu {
-}
-
 .header__theme-menu-list {
   display: grid;
   grid-template-columns: 1fr;
