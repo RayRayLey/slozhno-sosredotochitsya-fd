@@ -124,7 +124,7 @@
   font-weight: 700;
   line-height: 1.463rem;
   margin-top: 3.438rem;
-  max-inline-size: 22.188rem;
+  inline-size: 22.188rem;
   justify-self: end;
 }
 
@@ -164,6 +164,10 @@
   color: var(--accent-text-color);
 }
 
+.visualisation__title {
+  margin-bottom: 1.25rem;
+}
+
 .topic__description {
   font-size: 1.125rem;
   line-height: 1.463rem;
@@ -184,6 +188,7 @@
 .how-to__topic-title-text {
   inline-size: 18.75rem;
   background-color: transparent;
+  margin-bottom: 1.25rem;
 }
 
 .gallery {
@@ -294,11 +299,19 @@
     margin-bottom: 3.75rem;
   }
 
+  .topic__item:last-child .topic__description {
+    margin-bottom: 0;
+  }
+
   .why-reasons,
   .how-to-concentrate {
     display: grid;
     grid-template-columns: 14.75rem 1fr;
     gap: 20px;
+  }
+
+  .why-reasons__title {
+    margin-bottom: 0;
   }
 
   .distractions__title {
@@ -326,10 +339,6 @@
 
   .topic__list {
     grid-column: 2;
-  }
-
-  .visualisation__title {
-    margin-bottom: 1.25rem;
   }
 
   .gallery {
