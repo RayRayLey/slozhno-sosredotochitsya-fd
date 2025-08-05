@@ -49,14 +49,15 @@
       <h1 class="header__title">no focus</h1>
       <div class="header__description title-decor">
         <p class="header__description-text">
-          Что делать, когда не можешь делать ничего<br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
+          Что делать, когда не можешь делать ничего
+        </p>
+        <p class="header__description-text">
+          Или почему нам так сложно сконцентрироваться, особенно когда очень надо
         </p>
       </div>
     </header>
     <main>
-      <section class="why-reasons topic">
+      <section class="why-reasons topic__cards topic">
         <h2 class="topic__title why-reasons__title">
           Почему сосредоточиться так сложно
         </h2>
@@ -69,6 +70,7 @@
               (и всем нанимающим менеджерам этого мира)? А дело в том, что её
               просто не существует. Исследователи
               <a
+                target="_blank"
                 href="https://dana.org/news-and-insights/"
                 class="topic__link"
               >выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах
@@ -134,7 +136,7 @@
           </li>
         </ul>
       </section>
-      <section class="how-to-concentrate topic">
+      <section class="how-to-concentrate topic__cards topic">
         <h2 class="topic__title how-to-concentrate__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
@@ -145,7 +147,7 @@
           </h3>
         </div>
         <ul class="topic__list">
-          <li class="topic__item">
+          <article class="topic__item">
             <h3 class="topic__title title-decor sub-title">
               Представьте небо и облака
             </h3>
@@ -159,8 +161,8 @@
               вернуться в настоящий момент, а не волноваться о потенциальных
               проблемах из будущего.
             </p>
-          </li>
-          <li class="topic__item">
+          </article>
+          <article class="topic__item">
             <h3 class="topic__title title-decor sub-title">Включите музыку</h3>
             <p class="topic__description">
               Но не любую, и не любимую. Любимая может быть связана с сильными
@@ -168,12 +170,13 @@
               Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
               попробовать включить плейлист с «белым шумом» или нейромузыкой.
             </p>
-          </li>
-          <li class="topic__item">
+          </article>
+          <article class="topic__item">
             <h3 class="topic__title title-decor sub-title">Прогуляйтесь</h3>
             <p class="topic__description">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a
+                target="_blank"
                 href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                 class="topic__link"
               >показал</a>, что созерцание природы повышает концентрацию, в то время как
@@ -182,8 +185,8 @@
               мозг поступит ещё больше кислорода и он будет лучше работать. Но и
               простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
-          </li>
-          <li class="topic__item">
+          </article>
+          <article class="topic__item">
             <h3 class="topic__title title-decor sub-title">Хорошо ешьте</h3>
             <p class="topic__description">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
@@ -191,8 +194,8 @@
               высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица,
               фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
             </p>
-          </li>
-          <li class="topic__item">
+          </article>
+          <article class="topic__item">
             <h3 class="topic__title title-decor sub-title">Читайте</h3>
             <p class="topic__description">
               Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
@@ -200,43 +203,53 @@
               секунд. А вот интересная книга способна затянуть и на несколько
               часов и круто тренирует направленное внимание.
             </p>
-          </li>
+          </article>
         </ul>
       </section>
       <section class="visualisation topic">
         <h3 class="topic__title visualisation__title title-decor">А можно в картинках?</h3>
-        <div class="gallery">
-          <img
-            loading="lazy"
-            class="gallery__image gallery__image-sunset"
-            src="./images/sunset.png"
-            alt="Иллюстрация закатного сонца на фоне гор в пастельных тонах."
-          />
-          <img
-            loading="lazy"
-            class="gallery__image gallery__image-ice-cream"
-            src="./images/ice-cream.png"
-            alt="Мультяшная иллюстрация шариков мороженного"
-          />
-          <img
-            loading="lazy"
-            class="gallery__image gallery__image-tape"
-            src="./images/tape.png"
-            alt="Иллюстрация кассеты"
-          />
-          <img
-            loading="lazy"
-            class="gallery__image gallery__image-books"
-            src="./images/books.png"
-            alt="Иллюстрация стопки книг с кружкой кофе на вершине"
-          />
-          <img
-            loading="lazy"
-            class="gallery__image gallery__image-street"
-            src="./images/street.png"
-            alt="Иллюстрация вечерней улицы"
-          />
-        </div>
+        <ul class="gallery">
+          <li>
+            <img
+              loading="lazy"
+              class="gallery__image gallery__image-sunset"
+              src="./images/sunset.png"
+              alt="Иллюстрация закатного сонца на фоне гор в пастельных тонах."
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              class="gallery__image gallery__image-ice-cream"
+              src="./images/ice-cream.png"
+              alt="Мультяшная иллюстрация шариков мороженного"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              class="gallery__image gallery__image-tape"
+              src="./images/tape.png"
+              alt="Иллюстрация кассеты"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              class="gallery__image gallery__image-books"
+              src="./images/books.png"
+              alt="Иллюстрация стопки книг с кружкой кофе на вершине"
+            />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              class="gallery__image gallery__image-street"
+              src="./images/street.png"
+              alt="Иллюстрация вечерней улицы"
+            />
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
