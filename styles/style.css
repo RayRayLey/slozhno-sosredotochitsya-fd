@@ -271,7 +271,7 @@ li .title-decor {
 
   .header__description {
     margin-top: 10.125rem;
-    max-inline-size: 22.75rem;
+    inline-size: 22.75rem;
   }
 
   .topic {
